@@ -16,7 +16,7 @@ export const siteConfig = {
   resumeUrl: "/resume.pdf",
   socials: {
     github: "https://github.com/triasbudir",
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/trias-budi-rianto-64b0883a4/",
   },
   stats: [
     { label: "AI/ML projects delivered", value: "5+" },
