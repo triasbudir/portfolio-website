@@ -27,15 +27,17 @@ export default function Footer() {
           >
             <GithubIcon size={18} />
           </a>
-          <a
-            href={siteConfig.socials.linkedin}
-            target="_blank"
-            rel="noreferrer noopener"
-            aria-label="LinkedIn"
-            className="hover:text-foreground transition-colors"
-          >
-            <LinkedinIcon size={18} />
-          </a>
+          {siteConfig.socials.linkedin && (
+            <a
+              href={siteConfig.socials.linkedin}
+              target="_blank"
+              rel="noreferrer noopener"
+              aria-label="LinkedIn"
+              className="hover:text-foreground transition-colors"
+            >
+              <LinkedinIcon size={18} />
+            </a>
+          )}
         </div>
       </div>
     </footer>

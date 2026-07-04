@@ -1,18 +1,26 @@
 export const skillGroups = [
   {
-    category: "Frontend",
-    items: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Vue.js"],
+    category: "AI / ML",
+    items: [
+      "RAG Pipelines",
+      "LLM APIs (OpenAI, Groq, Claude)",
+      "Prompt Engineering",
+      "CLIP Zero-Shot Classification",
+      "Collaborative & Content-Based Filtering",
+      "FAISS Vector Search",
+      "NLP",
+    ],
   },
   {
-    category: "Backend",
-    items: ["Node.js", "Express", "PostgreSQL", "MongoDB", "REST & GraphQL APIs"],
+    category: "Programming",
+    items: ["Python", "C++", "JavaScript", "SQL", "Arduino IDE"],
   },
   {
-    category: "Infrastructure",
-    items: ["Docker", "AWS", "Vercel", "CI/CD", "Git"],
+    category: "Libraries & Frameworks",
+    items: ["Scikit-learn", "Pandas", "NumPy", "HuggingFace Transformers", "Plotly", "Streamlit", "Pillow"],
   },
   {
-    category: "Other",
-    items: ["Stripe Payments", "Auth (OAuth/JWT)", "Testing (Jest/Playwright)", "SEO Basics"],
+    category: "Tools",
+    items: ["Git/GitHub", "Docker", "Streamlit Cloud", "ChromaDB", "FAISS", "VS Code"],
   },
 ];

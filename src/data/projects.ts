@@ -7,42 +7,41 @@ export type Project = {
   gradient: string;
 };
 
-// Replace these with your real projects (screenshots go in /public/projects/).
+// Add liveUrl/repoUrl once you have live demos or public repos for these.
 export const projects: Project[] = [
   {
-    title: "ShopFlow — E-commerce Platform",
+    title: "AI Chatbot — Customer Service",
     description:
-      "A headless e-commerce storefront with cart, checkout, and Stripe payments, built for a US-based retail client.",
-    tags: ["Next.js", "Stripe", "PostgreSQL"],
-    liveUrl: "#",
-    repoUrl: "#",
+      "A RAG-based chatbot that answers reseller questions on products, pricing, and ordering policies straight from a knowledge base.",
+    tags: ["RAG", "FAISS", "Groq API", "Streamlit"],
     gradient: "from-violet-500 to-fuchsia-500",
   },
   {
-    title: "TaskPilot — SaaS Project Management Tool",
+    title: "AI Workflow Automation — B2B Orders",
     description:
-      "A multi-tenant project management app with real-time collaboration, used by remote teams in Europe.",
-    tags: ["React", "Node.js", "WebSockets"],
-    liveUrl: "#",
-    repoUrl: "#",
+      "An AI agent that automatically parses reseller order messages, validates stock, computes price and discounts, and generates order confirmations.",
+    tags: ["Groq LLM", "NLP Parsing", "CSV"],
     gradient: "from-sky-500 to-cyan-400",
   },
   {
-    title: "InvoiceEase — Billing Dashboard",
+    title: "AI Product Recommender",
     description:
-      "An automated invoicing and billing dashboard integrating with Stripe and Xero for an Australian SME.",
-    tags: ["TypeScript", "Express", "MongoDB"],
-    liveUrl: "#",
-    repoUrl: "#",
+      "A product recommendation system combining content-based and collaborative filtering with cosine similarity.",
+    tags: ["Scikit-learn", "Collaborative Filtering"],
     gradient: "from-amber-500 to-orange-500",
   },
   {
-    title: "BrightPage — Marketing Website",
+    title: "Fashion Image Classifier",
     description:
-      "A fast, SEO-optimized marketing site with a 98+ Lighthouse score, driving a 30% increase in leads.",
-    tags: ["Next.js", "Tailwind CSS", "SEO"],
-    liveUrl: "#",
-    repoUrl: "#",
+      "Automatically classifies clothing photos into product categories using CLIP zero-shot classification — no labeled training data required.",
+    tags: ["CLIP", "Computer Vision", "Pillow"],
     gradient: "from-emerald-500 to-teal-500",
+  },
+  {
+    title: "AI Analytics Dashboard",
+    description:
+      "An interactive sales dashboard with natural-language query — ask questions in plain language and get AI-generated insights.",
+    tags: ["Plotly", "Pandas", "Groq NLQ"],
+    gradient: "from-rose-500 to-pink-500",
   },
 ];

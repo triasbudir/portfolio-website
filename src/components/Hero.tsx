@@ -45,15 +45,17 @@ export default function Hero() {
         >
           <GithubIcon size={20} />
         </a>
-        <a
-          href={siteConfig.socials.linkedin}
-          target="_blank"
-          rel="noreferrer noopener"
-          aria-label="LinkedIn"
-          className="hover:text-foreground transition-colors"
-        >
-          <LinkedinIcon size={20} />
-        </a>
+        {siteConfig.socials.linkedin && (
+          <a
+            href={siteConfig.socials.linkedin}
+            target="_blank"
+            rel="noreferrer noopener"
+            aria-label="LinkedIn"
+            className="hover:text-foreground transition-colors"
+          >
+            <LinkedinIcon size={20} />
+          </a>
+        )}
         <span className="text-sm">{siteConfig.location}</span>
       </div>
     </section>

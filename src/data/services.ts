@@ -1,22 +1,22 @@
 export const services = [
   {
-    title: "Web Application Development",
+    title: "AI Chatbots & RAG Systems",
     description:
-      "Custom full-stack web apps built with React/Next.js and Node.js — from MVP to production-ready SaaS.",
+      "Retrieval-augmented chatbots that answer customer questions accurately from your own knowledge base, using LLMs like OpenAI, Groq, or Claude.",
   },
   {
-    title: "Landing Pages & Marketing Sites",
+    title: "AI Workflow Automation",
     description:
-      "Fast, responsive, SEO-friendly websites that convert visitors into customers.",
+      "Automate repetitive business processes — parsing orders, validating data, generating reports — with LLM agents and Python scripts.",
   },
   {
-    title: "API Development & Integrations",
+    title: "Computer Vision & Classification",
     description:
-      "REST/GraphQL APIs, third-party integrations (payments, auth, CRMs), and backend architecture.",
+      "Image classification and recognition systems using CLIP and modern vision models, for cataloging, moderation, or automation.",
   },
   {
-    title: "Maintenance & Consulting",
+    title: "Data Dashboards & Analytics",
     description:
-      "Code review, performance optimization, bug fixes, and technical consulting for existing products.",
+      "Interactive dashboards with natural-language query support, so anyone on your team can ask questions and get AI-generated insights.",
   },
 ];
