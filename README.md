@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio Website
 
-## Getting Started
+A full-stack developer portfolio built with Next.js, TypeScript, and Tailwind CSS — designed to help you land clients internationally.
 
-First, run the development server:
+## Getting started
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view it.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Editing content
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+All the placeholder content lives in `src/data/`, edit these files with your real info:
 
-## Learn More
+- `src/data/site.ts` — your name, role, bio, email, social links, stats
+- `src/data/skills.ts` — skill categories and tags
+- `src/data/services.ts` — services you offer
+- `src/data/projects.ts` — your project case studies (add screenshots to `public/` and swap the `gradient` placeholders for real images if you like)
 
-To learn more about Next.js, take a look at the following resources:
+The page sections themselves are in `src/components/` (`Hero.tsx`, `About.tsx`, `Skills.tsx`, `Services.tsx`, `Projects.tsx`, `Contact.tsx`, `Footer.tsx`, `Navbar.tsx`).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contact form (making it actually send emails)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The form posts to `src/app/api/contact/route.ts`. Without any configuration, submissions are just logged to the server console — good enough for local testing but not for production.
 
-## Deploy on Vercel
+To make it send real emails, sign up at [resend.com](https://resend.com) (free tier available), grab an API key, and set these environment variables (copy `.env.example` to `.env.local`):
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+RESEND_API_KEY=your_resend_api_key
+CONTACT_TO_EMAIL=you@yourdomain.com
+CONTACT_FROM_EMAIL=Portfolio Contact Form <onboarding@resend.dev>
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Also set `NEXT_PUBLIC_SITE_URL` to your real domain — it's used in SEO metadata, `sitemap.xml`, and `robots.txt`.
+
+## Deploying
+
+The fastest option is [Vercel](https://vercel.com/new) (made by the Next.js team, free for personal projects):
+
+1. Push this project to a GitHub repo.
+2. Import it on Vercel.
+3. Add the environment variables above in the Vercel project settings.
+4. Deploy — you'll get a live URL, and can attach a custom domain afterward.
+
+## Tech stack
+
+- [Next.js](https://nextjs.org) (App Router) + TypeScript
+- [Tailwind CSS](https://tailwindcss.com) v4
+- [lucide-react](https://lucide.dev) for icons
+- [Resend](https://resend.com) for transactional email (optional, contact form)
