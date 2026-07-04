@@ -12,8 +12,9 @@ export const projects: Project[] = [
   {
     title: "AI Chatbot — Customer Service",
     description:
-      "A RAG-based chatbot that answers reseller questions on products, pricing, and ordering policies straight from a knowledge base.",
-    tags: ["RAG", "FAISS", "Groq API", "Streamlit"],
+      "A RAG-based customer service chatbot for a fashion B2B business, answering questions on products, pricing, and ordering policies straight from a knowledge base.",
+    tags: ["LangChain", "RAG", "ChromaDB", "OpenAI", "Streamlit"],
+    repoUrl: "https://github.com/triasbudir/lemone-ai-chatbot",
     gradient: "from-violet-500 to-fuchsia-500",
   },
   {
@@ -33,8 +34,9 @@ export const projects: Project[] = [
   {
     title: "Fashion Image Classifier",
     description:
-      "Automatically classifies clothing photos into product categories using CLIP zero-shot classification — no labeled training data required.",
-    tags: ["CLIP", "Computer Vision", "Pillow"],
+      "Automatically classifies clothing photos into product categories using CLIP zero-shot classification, plus an AI analyst layer for generated insights — no labeled training data required.",
+    tags: ["CLIP", "HuggingFace", "Groq", "Pillow"],
+    repoUrl: "https://github.com/triasbudir/lemone-image-classifier",
     gradient: "from-emerald-500 to-teal-500",
   },
   {
